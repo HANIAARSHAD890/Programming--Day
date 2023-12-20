@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+
+string checkStudentStatus(int examHour,int examMinute,int studentHour,int studentMinute);
+
+main()
+{
+    int examHour;
+    int examMinute;
+    int studentHour;
+    int studentMinute;
+
+   cout <<"Enter Exam Starting Time (hour): ";
+   cin >>hour;
+   cout <<"Enter Exam Starting Time (minutes): ";
+   cin>>minutes;
+   cout<<"Enter Student hour of arrival: ";
+   cin>>arrivalhour;
+   cout<<"Enter Student minutes of arrival: ";
+   cin>>arrivalminutes;
+   {
+    cout<<checkStudentStatus(examHour,  examMinute, studentHour, studentMinute)
+   }
+
+
+
+
+}
+
+string checkStudentStatus(int examHour,int examMinute,int studentHour,int studentMinute)
+{
+   float minutes;
+
+
+    if(examHour>studentHour)
+ 
+   {
+      if  (examMinutes==0)
+      {
+        minutes=60-studentminute;
+      }
+        else
+      {
+       minutes=examMinutes-studentMinutes;
+
+      }
+      cout<<"Early" ;
+
+   }
+
+   else if (examHour<studenthour)
+ {
+    minutes=examMinutes+studentminutes;
+    if(examHour-studenthour==1)
+      {
+        cout<<"minutes";
+      }
+     else  
+      {
+        cout<<"hours after the start";
+
+      }
+ }
+     else  if (examHour==studentHour)&&(examMinute==studentMinute)
+      {
+        cout<<"on time";
+
+      }
+   minutes;
+}
+

@@ -1,0 +1,6 @@
+Name: r
+Age: 1
+MatricMarks: 1
+FSCMarks: 1
+ECATMarks: 1
+

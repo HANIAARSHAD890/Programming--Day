@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+float calculatefruitprice(string fruit,string dayofweek,double quantity);
+
+main()
+{
+    string fruit;
+    string dayofweek;
+    double quantity;
+
+
+   cout <<"Enter the fruit name: ";
+   cin >>fruit;
+   cout <<"Enter the day of week (e.g., Monday,Sunday): ";
+   cin>>dayofweek;
+   cout<<"Enter the quantity: ";
+   cin>>quantity;
+   calculatefruitprice( fruit,dayofweek,quantity);
+   cout<<calculatefruitprice( fruit,dayofweek,quantity);
+
+
+
+
+}
+
+float calculatefruitprice(string fruit,string dayofweek,double quantity)
+{
+   float price;
+
+
+   if (dayofweek=="Sunday")
+   {
+      if  (fruit=="banana")
+      {
+        price=quantity*2.50;
+      }
+   }
+
+    if ((dayofweek=="Monday")||(dayofweek=="Tuesday")||(dayofweek=="Wednesday")||(dayofweek=="Thursday")||(dayofweek=="Friday")
+           ||(dayofweek=="Saturday"))
+   {
+    if  (fruit=="banana")
+      {
+        price=quantity*2.70;
+      }
+      
+   }
+
+
+   
+   return price;
+}

@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int frequencychecker(int number,int digit);
+main()
+{
+    int rowsize = 0;
+    cout<<"Enter desired number of rows: ";
+    cin>>rowsize;
+    printStars(rowSize);
+}
+    void printStars(int rowsize)
+   {
+    for(int row=1;row<=rowsize;row++)
+    { 
+    for (int col=1;col<=row;col++)
+    {
+   cout<<"*";
+    }
+   cout<<endl;
+
+
+
+   
+}
+   
+   
+
+
+}
