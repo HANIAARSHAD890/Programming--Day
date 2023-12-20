@@ -1,14 +1,57 @@
-
-def main():
-    number=int(input("Enter number: "))
-  
-    print(Getlength(number))
-     
 def Getlength(number):
-    for i in range(0,len(number),1):
-         counter=0
-         counter=counter+i
-        #  print("hania")
-    return counter
+    count = 0 
+     
+    while (number!=0):
+        number= number//10
+        count=count+1
+        integer=(int(count))
+        # print(count)
+
+    return integer
+
+number=int(input("Enter number: "))
+num=Getlength(number)
+print(num)
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
      main()
